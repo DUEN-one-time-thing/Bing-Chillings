@@ -246,6 +246,84 @@ code {
   text-underline-offset: 6px;
 }
 
+/* ── Team section ── */
+
+.teamSection {
+  border-bottom: 1px solid var(--line);
+}
+
+.teamGroups {
+  display: grid;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.teamGroup {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.teamGroupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.teamGroupHeader h3 {
+  font-size: 1.35rem;
+}
+
+.teamSize {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(15, 118, 110, 0.08);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.teamDescription {
+  margin: 14px 0 24px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.teamMembers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.headshot {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #ece7df;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 2px dashed var(--line);
+}
+
+.memberName {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
 @media (max-width: 760px) {
   .hero {
     min-height: 82vh;
@@ -271,5 +349,19 @@ code {
 
   .step {
     grid-template-columns: 1fr;
+  }
+
+  .teamGroup {
+    padding: 20px;
+  }
+
+  .teamMembers {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 16px;
+  }
+
+  .headshot {
+    width: 80px;
+    height: 80px;
   }
 }
