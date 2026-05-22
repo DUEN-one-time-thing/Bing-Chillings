@@ -1626,7 +1626,7 @@ tbody tr:last-child td {
   .projectLayout,
   .viewSwitch {
     width: min(100% - 32px, 1180px);
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .viewSwitch {
@@ -1665,7 +1665,7 @@ tbody tr:last-child td {
   }
 
   .featureRows article {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 10px;
   }
 
@@ -1707,22 +1707,22 @@ tbody tr:last-child td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* Always show profile overlay on touch screens (no reliable hover) */
-  .profileCard::before {
+  /* Scroll-triggered highlight — JS adds .highlighted via IntersectionObserver */
+  .profileCard.highlighted::before {
     opacity: 0.65;
   }
 
-  .profileOverlay {
+  .profileCard.highlighted .profileOverlay {
     opacity: 1;
     padding: 10px;
   }
 
-  .profileOverlay h3 {
+  .profileCard.highlighted .profileOverlay h3 {
     font-size: 0.76rem;
     line-height: 1.2;
   }
 
-  .memberRole {
+  .profileCard.highlighted .memberRole {
     font-size: 0.56rem;
     margin-bottom: 3px;
   }
@@ -1732,17 +1732,78 @@ tbody tr:last-child td {
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
 
-  /* Project section: ensure inline list text doesn't overflow */
+  /* Project section mobile */
+  .projectLayout {
+    padding-top: clamp(24px, 4vw, 44px);
+    gap: 24px;
+  }
+
+  .projectContent,
+  .projectBlock,
+  .featureRows,
+  .featureRows article,
+  .splitBlock,
+  .safetyBlock,
+  .maintenanceBlock {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .featureRows p,
+  .flowPath p,
+  .splitBlock p,
+  .safetyPanel p,
+  .featureRows article a {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .pageIndex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .pageIndex p {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .pageIndex a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    grid-template-columns: unset;
+  }
+
+  .projectContent {
+    gap: clamp(36px, 6vw, 54px);
+  }
+
+  .projectBlock h2,
+  .compactHeader h2 {
+    font-size: clamp(1.3rem, 5vw, 1.75rem);
+  }
+
   .safetyPanel ul,
   .safetyPanel ol {
     padding-left: 16px;
   }
 
-  /* Documents links more tappable */
   .featureRows article a {
     display: inline-block;
     padding: 6px 0;
     font-size: 0.95rem;
+  }
+
+  .systemCallout {
+    margin-top: 16px;
   }
 
   .carouselTrack {
@@ -1844,16 +1905,16 @@ tbody tr:last-child td {
     grid-template-columns: 1fr;
   }
 
-  /* Single-column cards have more horizontal room — slightly larger text */
-  .profileOverlay {
+  /* Single-column cards have more room — bump overlay text back up */
+  .profileCard.highlighted .profileOverlay {
     padding: 14px;
   }
 
-  .profileOverlay h3 {
+  .profileCard.highlighted .profileOverlay h3 {
     font-size: 0.92rem;
   }
 
-  .memberRole {
+  .profileCard.highlighted .memberRole {
     font-size: 0.64rem;
   }
 
@@ -1875,5 +1936,74 @@ tbody tr:last-child td {
   th {
     padding: 12px 10px;
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Page headers — clamp min hits too large at ~364px content width */
+  .detailsHeader h1 {
+    font-size: clamp(1.8rem, 9vw, 2.4rem);
+  }
+
+  .detailsHeader p:not(.eyebrow) {
+    font-size: 0.95rem;
+  }
+
+  /* Team section */
+  .departmentIntro h2 {
+    font-size: clamp(1.2rem, 5.5vw, 1.6rem);
+  }
+
+  .departmentIntro p:not(.eyebrow) {
+    font-size: 0.92rem;
+  }
+
+  .departmentGrid {
+    gap: 28px;
+  }
+
+  /* Profile overlay at single column — slightly smaller to stay inside card */
+  .profileCard.highlighted .profileOverlay {
+    padding: 10px;
+  }
+
+  .profileCard.highlighted .profileOverlay h3 {
+    font-size: 0.82rem;
+  }
+
+  .profileCard.highlighted .memberRole {
+    font-size: 0.58rem;
+  }
+
+  /* Project section */
+  .projectBlock h2,
+  .compactHeader h2 {
+    font-size: clamp(1.1rem, 5.5vw, 1.5rem);
+  }
+
+  .featureRows article {
+    gap: 6px;
+    padding: 14px 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .flowPath span {
+    font-size: 0.8rem;
+  }
+
+  .flowPath p,
+  .featureRows p,
+  .safetyPanel ul,
+  .safetyPanel ol {
+    font-size: 0.9rem;
+  }
+
+  /* Pill nav links — shrink text so they wrap cleanly */
+  .pageIndex a {
+    font-size: 0.7rem;
+    padding: 4px 8px;
   }
 }
