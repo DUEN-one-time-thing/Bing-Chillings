@@ -1707,6 +1707,44 @@ tbody tr:last-child td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* Always show profile overlay on touch screens (no reliable hover) */
+  .profileCard::before {
+    opacity: 0.65;
+  }
+
+  .profileOverlay {
+    opacity: 1;
+    padding: 10px;
+  }
+
+  .profileOverlay h3 {
+    font-size: 0.76rem;
+    line-height: 1.2;
+  }
+
+  .memberRole {
+    font-size: 0.56rem;
+    margin-bottom: 3px;
+  }
+
+  /* Department header scaling */
+  .departmentIntro h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  /* Project section: ensure inline list text doesn't overflow */
+  .safetyPanel ul,
+  .safetyPanel ol {
+    padding-left: 16px;
+  }
+
+  /* Documents links more tappable */
+  .featureRows article a {
+    display: inline-block;
+    padding: 6px 0;
+    font-size: 0.95rem;
+  }
+
   .carouselTrack {
     min-height: 360px;
   }
@@ -1804,5 +1842,38 @@ tbody tr:last-child td {
 
   .profilesGrid {
     grid-template-columns: 1fr;
+  }
+
+  /* Single-column cards have more horizontal room — slightly larger text */
+  .profileOverlay {
+    padding: 14px;
+  }
+
+  .profileOverlay h3 {
+    font-size: 0.92rem;
+  }
+
+  .memberRole {
+    font-size: 0.64rem;
+  }
+
+  /* Project section small-screen cleanup */
+  .projectBlock h2,
+  .compactHeader h2 {
+    font-size: clamp(1.4rem, 6vw, 1.9rem);
+  }
+
+  .featureRows article {
+    padding: 18px 0;
+  }
+
+  .flowPath li {
+    padding: 18px 0;
+  }
+
+  td,
+  th {
+    padding: 12px 10px;
+    font-size: 0.85rem;
   }
 }

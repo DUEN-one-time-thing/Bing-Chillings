@@ -5,11 +5,11 @@ import { useState } from "react";
 const slides = [
   {
     label: "What is FlashBack?",
-    body: "FlashBack is a compact panoramic photo capture device designed for campus events, club tabling, and spontaneous gatherings. It sweeps a smooth 270-degree arc around a group and prints a physical keepsake on the spot — something people can hold, trade, and remember long after the event ends.",
+    body: "FlashBack is a portable photo booth designed to capture and print panoramic photostrips in real time. Using image stitching and instant thermal printing, FlashBack delivers panoramic photostrips directly to users within seconds. Every print serves as a tangible memory students can keep and preserve.",
   },
   {
     label: "Why we made FlashBack.",
-    body: "The inspiration is simple: cultivate real social interaction in a world where community can drift into social media isolation. FlashBack reimagines the polaroid photo machine as a compact event companion — making campus interactions feel more present, playful, and worth holding onto.",
+    body: "Many student memories today only exist digitally, making campus experiences feel temporary and easy to forget. Flashback was created to give students a tangible way to preserve meaningful moments while helping clubs create interactive experiences that increase engagement, attract attention, and leave lasting impressions.",
   },
 ];
 
