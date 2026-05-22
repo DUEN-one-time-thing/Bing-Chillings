@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { departments } from "./project-data";
 
 type Member = {
@@ -16,8 +19,27 @@ function PersonPlaceholder() {
 }
 
 function ProfileCard({ member }: { member: Member }) {
+  const ref = useRef<HTMLElement>(null);
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (!window.matchMedia("(max-width: 820px)").matches) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setActive(entry.isIntersecting),
+      { threshold: 0.55 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <article className="profileCard">
+    <article
+      className={`profileCard${active ? " highlighted" : ""}`}
+      ref={ref}
+    >
       <div className="profileImage">
         {member.image ? (
           <img src={member.image} alt={`${member.name} portrait`} />
