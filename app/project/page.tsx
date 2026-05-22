@@ -13,7 +13,6 @@ export default function Project() {
           <Link href="/#home">Home</Link>
           <a href="#manual">Project</a>
           <Link href="/details#timeline">Timeline</Link>
-          <a href="#manual">Manual</a>
         </div>
       </nav>
 
