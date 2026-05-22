@@ -36,7 +36,7 @@ const functionalityRows = [
   },
   {
     title: "Panoramic Capture",
-    body: "When the green capture button is pressed, the servo rotates the chassis across a 270-degree arc, triggering 16 individual still images — each captured and processed within 0.28 seconds for a total sequence duration of 4.48 seconds. A Python stitching library merges overlapping frames and auto-crops black pixels to produce a clean panoramic output.",
+    body: "When the green capture button is pressed, the servo rotates the chassis across a 270-degree arc, triggering 16 individual still images, each captured and processed within 0.28 seconds for a total sequence duration of 4.48 seconds. A Python stitching library merges overlapping frames and auto-crops black pixels to produce a clean panoramic output.",
   },
   {
     title: "User Interface",
@@ -77,7 +77,7 @@ const softwareTools = [
 const challenges = [
   {
     title: "Camera Stitching",
-    body: "Inconsistent lighting in the test room — which changed throughout the day — caused unreliable stitching. Resolution required hours of trial and error tuning the number of captures, angles between captures, inter-capture timing, exposure, and lighting settings.",
+    body: "Inconsistent lighting in the test room, which changed throughout the day, caused unreliable stitching. Resolution required hours of trial and error tuning the number of captures, angles between captures, inter-capture timing, exposure, and lighting settings.",
   },
   {
     title: "Raspberry Pi Short Circuit",
@@ -93,7 +93,7 @@ const challenges = [
   },
   {
     title: "Chassis Design & Assembly",
-    body: "A week of rough sketches and vague models was needed before settling on the polaroid-inspired form — evaluated against R2-D2, Wall-E, and vintage camera concepts. Panel connections evolved through male/female connectors, heat inserts, and glue before landing on internal L-shaped tabs with screws for the front/rear join.",
+    body: "A week of rough sketches and vague models was needed before settling on the polaroid-inspired form after evaluating R2-D2, Wall-E, and vintage camera concepts. Panel connections evolved through male/female connectors, heat inserts, and glue before landing on internal L-shaped tabs with screws for the front/rear join.",
   },
   {
     title: "Height Adjustability",
@@ -113,7 +113,7 @@ const doNotList = [
   "Try to manually rotate the chassis.",
   "Touch any wiring inside the chassis at any time.",
   "Move during capture.",
-  "Tangle the charging wire around the chassis — only charge when the machine is not in use.",
+  "Tangle the charging wire around the chassis. Only charge when the machine is not in use.",
 ];
 
 export function ProjectSwitcher() {
@@ -155,7 +155,7 @@ export function ProjectSwitcher() {
           </div>
           <div>
             <p>
-              Campus engagement often suffers from a modern disconnect as students increasingly rely on social media rather than face-to-face interaction. FlashBack bridges this gap — a panoramic photo capture machine that prints physical keepsakes to foster lasting, tangible memories at club events, campus fairs, and social gatherings.
+              Campus engagement often suffers from a modern disconnect as students increasingly rely on social media rather than face-to-face interaction. FlashBack bridges this gap as a panoramic photo capture machine that prints physical keepsakes to foster lasting, tangible memories at club events, campus fairs, and social gatherings.
             </p>
             <div className="quickFacts compact" aria-label="Project highlights">
               {quickFacts.map((fact) => (

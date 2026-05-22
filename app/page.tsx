@@ -44,7 +44,7 @@ export default function Home() {
             experiences are often stored on mobile devices and easily get lost.
           </p>
           <p>
-            FlashBack was built to change that — an exciting photo booth that draws
+            FlashBack was built to change that, an exciting photo booth that draws
             greater attention to holding onto special memories through physical keepsakes
             at DUEN tabling and formal events.
           </p>

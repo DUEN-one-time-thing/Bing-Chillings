@@ -1,7 +1,7 @@
 export const milestones = [
   {
     title: "Weeks 1-2",
-    body: "The project entered its initial design phase with most parts ordered, apart from buttons, ribbon cable, and servo. Progress was made on both hardware and software fronts — the panoramic camera capture feature was initialized, prototype code was developed for the emergency and capture buttons, and the Raspberry Pi was successfully set up with the code uploaded.",
+    body: "The project entered its initial design phase with most parts ordered, apart from buttons, ribbon cable, and servo. Progress was made on both hardware and software fronts, including initializing the panoramic camera capture feature, developing prototype code for the emergency and capture buttons, and successfully setting up the Raspberry Pi with the code uploaded.",
     images: ["/timeline/wk12_1.png", "/timeline/wk12_2.png", "/timeline/wk12_3.png"],
   },
   {
@@ -52,7 +52,7 @@ export const guideSteps = [
   "Find the ON/OFF switch on the side of the machine and flip it ON.",
   "Position yourself and other participants around the camera in an arc up to 270 degrees.",
   "Manually adjust the camera extension module to the desired height by moving it up and down, then lock it into place with the peg.",
-  "Adjust the ring light using the yellow physical button — pressing it cycles through brightness levels up to maximum, then off.",
+  "Adjust the ring light using the yellow physical button, which cycles through brightness levels up to maximum, then off.",
   "Preview the photo using the blue button and adjust positioning or brightness as needed.",
   "Press the green capture button, get every participant into position, wait 3 seconds and say \"Cheese!\"",
   "Rip off the print from the thermal printer slot to collect your photo.",
@@ -72,10 +72,10 @@ export const departments = [
   {
     title: "Electronics & Computer Science Team",
     description:
-      "The electronics team wires the entirety of the Raspberry Pi and all of the electrical components, while the computer science team codes every integrated component—including the high-torque servo motor, the ring light, the touchscreen interface, and the custom user interface (UI).",
+      "The electronics team wires the entirety of the Raspberry Pi and all of the electrical components, while the computer science team codes every integrated component, including the high-torque servo motor, the ring light, the touchscreen interface, and the custom user interface (UI).",
     members: [
       { name: "Divjot Purewal", role: "Subteam Lead", image: "/headshots/divjot.JPG" },
-      { name: "Johnathon Li", role: "Co-Captain", image: "/headshots/jonathan.png" },
+      { name: "Johnathan Li", role: "Co-Captain", image: "/headshots/jonathan.png" },
       { name: "Armaan Dewett", image: "/headshots/armaan.JPG" },
       { name: "Aneel Sethi", image: "/headshots/aneel.jpeg" },
       { name: "Andrew DeLaCruz", image: "/headshots/andrew.JPG" },
