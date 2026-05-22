@@ -22,6 +22,21 @@ export default function Team() {
         <p>Meet the people behind FlashBack</p>
       </header>
 
+      <section className="section videoSection" aria-labelledby="team-video-title">
+        <div className="sectionHeader">
+          <p className="eyebrow">Documentation</p>
+          <h2 id="team-video-title">Bing Chilling Cohort Documentation Video</h2>
+        </div>
+        <div className="videoPlayer">
+          <iframe
+            src="https://www.youtube.com/embed/NprNPgzAIpI"
+            title="Bing Chilling Cohort Documentation Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
       <section className="section teamSection">
         <TeamDepartments />
       </section>

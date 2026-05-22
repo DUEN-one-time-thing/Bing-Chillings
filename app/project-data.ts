@@ -1,23 +1,28 @@
 export const milestones = [
   {
     title: "Weeks 1-2",
-    body: "The team aligned on the campus social gap, researched compact photo booth precedents, and defined FlashBack as a physical keepsake machine for club tabling and spontaneous gathering moments.",
+    body: "The project entered its initial design phase with most parts ordered, apart from buttons, ribbon cable, and servo. Progress was made on both hardware and software fronts — the panoramic camera capture feature was initialized, prototype code was developed for the emergency and capture buttons, and the Raspberry Pi was successfully set up with the code uploaded.",
+    images: ["/timeline/wk12_1.png", "/timeline/wk12_2.png", "/timeline/wk12_3.png"],
   },
   {
     title: "Week 3",
-    body: "Initial mechanical and electrical designs took shape through enclosure sketches, rotation studies, wiring maps, and schematic planning for the camera, lighting, controls, and print path.",
+    body: "The team worked on CAD design for camera placement and coded features including still photo capture, live video feed, and motor rotation, though printer problems caused some delays. The design evolved from a boxy shape to a more R2D2-inspired form, and a screen was received and connected to the Raspberry Pi with controls uploaded. Progress on the camera display was halted after the ribbon cable broke, requiring a replacement to be ordered.",
+    images: ["/timeline/wk3_1.png", "/timeline/wk3_2.png", "/timeline/wk3_3.png"],
   },
   {
     title: "Week 4",
-    body: "Core components were procured while early prototypes tested fit, power behavior, button inputs, camera capture flow, and the first versions of the Raspberry Pi software stack.",
+    body: "A tolerance print was done to test wall connections, and the CAD was migrated to SolidWorks so the whole team could collaborate, though the transfer caused sketches to convert into objects. Hardware progress included completing the height mechanism, connecting the ring light to the Raspberry Pi, and advancing motor, lighting, and early UI code. The UI was redesigned from touchscreen to physical buttons per the project manager's direction, and the thermal printer case was updated with screw holders with the logo added to the rear chassis. The team also worked on the technical presentation, wrapped up the fundraiser, built a roughly 75%-scale cardboard model, and addressed printing challenges using the ESDC printers for fit testing.",
+    images: ["/timeline/wk4_1.png", "/timeline/wk4_2.png", "/timeline/wk4_3.png"],
   },
   {
     title: "Week 5",
-    body: "Physical fabrication moved into 3D printed PLA assembly, structural integration, servo mounting, bayonet extension checks, ring light placement, and internal wiring organization.",
+    body: "The team printed and secured the two base halves, completed the camera housing, and created a bearing mechanism to smooth rotation and reduce servo motor load, while sourcing heat inserts and screws to begin assembly. CAD work continued with tolerance tests for screw connections and partitioning the rear and front chassis into smaller assembly parts for final checks before printing. On the software side, major progress included a UI revamp, merged UI and panoramic functions, a new countdown screen, and verified LED functionality. Broad troubleshooting and testing was conducted across both the CS and EE sides of the project.",
+    images: ["/timeline/wk5_1.png", "/timeline/wk5_2.png", "/timeline/wk5_3.png"],
   },
   {
     title: "Week 6",
-    body: "The final system was calibrated for smooth 270-degree capture, touchscreen preview, print timing, power safety, field deployment, debugging, and repeated user testing.",
+    body: "The team finalized the mechanical and aesthetic design of the chassis, which involved CAD modeling for counterweight housings and hexagonal cutouts, resizing components, and successfully assembling, painting, and troubleshooting the 3D-printed parts. On the hardware and electronics side, they integrated a camera extension module and verified that the power system could support all components. The project concluded with software integration, where the team successfully connected the user interface to the core code and finalized their reach goals.",
+    images: ["/timeline/wk6_1.png", "/timeline/wk6_2.png", "/timeline/wk6_3.png"],
   },
 ];
 
