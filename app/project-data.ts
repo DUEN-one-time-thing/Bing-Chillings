@@ -34,29 +34,38 @@ export const bom = [
   ["Thermal Printer", "1", "$51.22", "$51.22"],
   ["Thermal Paper Rolls", "1", "$13.10", "$13.10"],
   ["24 Bits Ring Light", "1", "$9.82", "$9.82"],
-  ["Lipo-Ion Battery 12V", "1", "$8.96", "$8.96"],
+  ["Lipo-Ion Battery 12.6V", "1", "$21.62", "$21.62"],
   ["High Torque Servo", "1", "$16.38", "$16.38"],
   ["Ball Bearings", "1", "$8.03", "$8.03"],
   ["Heat Sink", "1", "$7.64", "$7.64"],
   ["Filament (PLA)", "1", "$48.06", "$48.06"],
-  ["3D Printing Glue", "1", "$14.74", "$14.74"],
+  ["PLA Glue", "1", "$14.74", "$14.74"],
+  ["Weights", "1", "$14.09", "$14.09"],
+  ["ACE Screws", "1", "$18.26", "$18.26"],
+  ["Paint Supplies", "1", "$32.83", "$32.83"],
+  ["Rocker Switches", "1", "$6.98", "$6.98"],
+  ["Camera Cable", "1", "$8.96", "$8.96"],
+  ["Buck Converter", "1", "$13.10", "$13.10"],
 ];
 
 export const guideSteps = [
-  "Flip the side ON/OFF toggle switch to ON.",
-  "Gather participants around the camera, supporting an arc up to 270 degrees.",
-  "Manually adjust the bayonet camera extension mount height and lock with the peg.",
-  "Cycle through the ring light settings using the control button: Max, Dimmed, or Off.",
-  "Use the Green button to preview the shot on the 5-inch touchscreen IPS display.",
-  "Press the Blue capture button to initiate the smooth 270-degree servo rotation.",
-  "Retrieve your freshly printed memory from the thermal printer slot.",
+  "Find the ON/OFF switch on the side of the machine and flip it ON.",
+  "Position yourself and other participants around the camera in an arc up to 270 degrees.",
+  "Manually adjust the camera extension module to the desired height by moving it up and down, then lock it into place with the peg.",
+  "Adjust the ring light using the yellow physical button — pressing it cycles through brightness levels up to maximum, then off.",
+  "Preview the photo using the blue button and adjust positioning or brightness as needed.",
+  "Press the green capture button, get every participant into position, wait 3 seconds and say \"Cheese!\"",
+  "Rip off the print from the thermal printer slot to collect your photo.",
 ];
 
 export const checklist = [
-  "Charge the 12.6V rechargeable LiPo battery before events.",
-  "Replace thermal paper rolls when the feed window looks low.",
-  "Check wiring and connectors for heat damage or looseness.",
-  "Wipe down the PLA exterior and touchscreen between uses.",
+  "Plug the charger into a wall outlet and connect it to the device to charge the battery.",
+  "Replace the thermal paper roll if it has run out.",
+  "Check wire connections and internal housing for shortage or heat damage.",
+  "Re-glue parts that are peeling or lifting.",
+  "Re-print parts that are cracked or broken.",
+  "Wipe the exterior if dust builds up.",
+  "Touch up worn paint as needed.",
 ];
 
 export const departments = [

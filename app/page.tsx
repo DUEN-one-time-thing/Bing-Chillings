@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { InfoSlider } from "./InfoSlider";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -42,92 +42,42 @@ export default function Home() {
 
       <section id="home" className="hero">
         <div className="heroOverlay">
-          <h1>FlashBack</h1>
-          <p className="heroSubtitle">A way to keep memories alive.</p>
-        </div>
-        <div className="photoPlaceholder" aria-label="Project photo placeholder">
-          <span>Project photo placeholder</span>
-        </div>
-      </section>
-
-      <section id="about" className="section carouselSection bgLight reveal">
-        <div className="carousel">
-          <div className="carouselTrack">
-            {slides.map((slide, index) => (
-              <div
-                key={index}
-                className={`carouselCard ${index === currentSlide ? "active" : ""}`}
-              >
-                <h2>{slide.title}</h2>
-                <p>{slide.content}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="carouselControls">
-            <button
-              className="carouselButton prevButton"
-              onClick={prevSlide}
-              aria-label="Previous slide"
-              disabled={currentSlide === 0}
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="15 18 9 12 15 6"></polyline>
-              </svg>
-            </button>
-
-            <div className="carouselDots">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  className={`dot ${index === currentSlide ? "active" : ""}`}
-                  onClick={() => setCurrentSlide(index)}
-                  aria-label={`Go to slide ${index + 1}`}
-                  aria-current={index === currentSlide}
-                />
-              ))}
-            </div>
-
-            <button
-              className="carouselButton nextButton"
-              onClick={nextSlide}
-              aria-label="Next slide"
-              disabled={currentSlide === slides.length - 1}
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </button>
-          </div>
+          <p className="eyebrow">DUEN Spring 2026 Cohort</p>
+          <h1>
+            <img src="/flashback_logo.png" alt="FlashBack" className="heroLogo" />
+          </h1>
+          <p>
+            A compact 270-degree photo machine for club tabling, campus events,
+            and physical keepsakes.
+          </p>
         </div>
       </section>
 
-      <section className="section videoSection bgDark reveal" aria-labelledby="video-title">
+      <InfoSlider />
+
+      <section id="about" className="section aboutSection reveal">
         <div className="sectionHeader">
-          <p className="eyebrow">Documentation</p>
-          <h2 id="video-title">Bing Chilling Cohort Documentation Video</h2>
+          <p className="eyebrow">About Us</p>
+          <h2>We are the Spring 2026 DUEN Cohort, Bing Chilling.</h2>
         </div>
-        <div className="videoPlayer" aria-label="YouTube video embed placeholder">
-          <div className="playButton" aria-hidden="true" />
-          <p>YouTube embed placeholder</p>
+        <div className="aboutCopy">
+          <p>
+            Nowadays, digitized media leads to less tangible memories because important
+            experiences are often stored on mobile devices and easily get lost.
+          </p>
+          <p>
+            FlashBack was built to change that — an exciting photo booth that draws
+            greater attention to holding onto special memories through physical keepsakes
+            at DUEN tabling and formal events.
+          </p>
+          <a href="https://duendavis.com/" target="_blank" rel="noreferrer">
+            Visit DUEN Davis
+          </a>
+          <div className="ctaRow">
+            <Link className="cta" href="/team">
+              Meet the Team
+            </Link>
+          </div>
         </div>
       </section>
 

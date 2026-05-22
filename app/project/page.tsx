@@ -22,9 +22,7 @@ export default function Project() {
           <h1>FlashBack, from concept to capture.</h1>
           <p>
             A compact 270-degree photo machine for club tabling, campus events,
-            and physical keepsakes. This page separates the build logic,
-            operating flow, safety notes, and materials into quick-reference
-            sections.
+            and physical keepsakes.
           </p>
         </div>
       </header>
