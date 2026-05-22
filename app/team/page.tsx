@@ -17,12 +17,9 @@ export default function Team() {
       </nav>
 
       <header className="detailsHeader">
-        <p className="eyebrow">About Us</p>
+        <p className="eyebrow">Meet the Team</p>
         <h1>Bing Chilling Cohort</h1>
-        <p>
-          Meet the departments behind FlashBack, organized dynamically so team
-          profiles can be expanded as names and photos are finalized.
-        </p>
+        <p>Meet the people behind FlashBack</p>
       </header>
 
       <section className="section teamSection">

@@ -2,6 +2,7 @@ import { departments } from "./project-data";
 
 type Member = {
   name: string;
+  role?: string;
   image?: string;
 };
 
@@ -24,7 +25,10 @@ function ProfileCard({ member }: { member: Member }) {
           <PersonPlaceholder />
         )}
       </div>
-      <h3>{member.name}</h3>
+      <div className="profileOverlay">
+        {member.role && <p className="memberRole">{member.role}</p>}
+        <h3>{member.name}</h3>
+      </div>
     </article>
   );
 }
@@ -35,7 +39,7 @@ export function TeamDepartments() {
       {departments.map((department) => (
         <article className="departmentCard reveal" key={department.title}>
           <div className="departmentIntro">
-            <p className="eyebrow">Department</p>
+            <p className="eyebrow">Subteam</p>
             <h2>{department.title}</h2>
             <p>{department.description}</p>
           </div>

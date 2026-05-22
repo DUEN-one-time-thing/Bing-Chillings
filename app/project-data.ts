@@ -60,12 +60,12 @@ export const departments = [
     description:
       "The electronics team wires the entirety of the Raspberry Pi and all of the electrical components, while the computer science team codes every integrated component—including the high-torque servo motor, the ring light, the touchscreen interface, and the custom user interface (UI).",
     members: [
-      { name: "John", image: "" },
-      { name: "Armaan", image: "" },
-      { name: "Aneel", image: "" },
-      { name: "Divjot", image: "" },
-      { name: "Andrew", image: "" },
-      { name: "Shub", image: "" },
+      { name: "Divjot Purewal", role: "Subteam Lead", image: "/headshots/divjot.JPG" },
+      { name: "Johnathon Li", role: "Co-Captain", image: "/headshots/jonathan.png" },
+      { name: "Armaan Dewett", image: "/headshots/armaan.JPG" },
+      { name: "Aneel Sethi", image: "/headshots/aneel.jpeg" },
+      { name: "Andrew DeLaCruz", image: "/headshots/andrew.JPG" },
+      { name: "Shubh Lele", image: "/headshots/shubh.jpg" },
     ],
   },
   {
@@ -73,15 +73,15 @@ export const departments = [
     description:
       "The CAD and hardware team meticulously designs every structural component of the machine, handles the slicing and 3D printing workflows, and physically assembles the final chassis parts.",
     members: [
-      { name: "Mandee", image: "" },
-      { name: "Cerene", image: "" },
-      { name: "Theresa", image: "" },
-      { name: "Viv", image: "" },
-      { name: "Rylan", image: "" },
-      { name: "Logan", image: "" },
-      { name: "Lindsey", image: "" },
-      { name: "Andre", image: "" },
-      { name: "Shaun", image: "" },
+      { name: "Vivian Shen", role: "Subteam Lead", image: "/headshots/viv.jpg" },
+      { name: "Mandee Nguyen", role: "Treasurer", image: "/headshots/mandee.JPG" },
+      { name: "Cerene Lee", image: "/headshots/cerene.JPG" },
+      { name: "Theresa Tsai", image: "/headshots/theresa.JPG" },
+      { name: "Rylan Kuo", image: "/headshots/rylan.JPG" },
+      { name: "Logan Moul", image: "/headshots/logan.JPG" },
+      { name: "Lindsey Ngo", image: "/headshots/lindsey.png" },
+      { name: "Andre Velez", image: "/headshots/andre.PNG" },
+      { name: "Shaun Kim", image: "/headshots/shaun.png" },
     ],
   },
   {
@@ -89,12 +89,12 @@ export const departments = [
     description:
       "The documentation team coordinates external outreach, social media, and fundraising events, while managing website development, project timelines, video production, promotional brochures, and official logo designs.",
     members: [
-      { name: "Ema", image: "" },
-      { name: "Nat", image: "" },
-      { name: "Rebekah", image: "" },
-      { name: "Sanjana", image: "" },
-      { name: "Grace", image: "" },
-      { name: "Jacob", image: "" },
+      { name: "Jacob Olano", role: "Subteam Lead", image: "/headshots/jacob.JPG" },
+      { name: "Ema Maeda", role: "Co-Captain", image: "/headshots/ema.png" },
+      { name: "Natalie Huang", image: "/headshots/nat.jpg" },
+      { name: "Rebekah Lee", image: "/headshots/rebekah.JPG" },
+      { name: "Sanjana Hazari", image: "/headshots/sanjana.png" },
+      { name: "Grace Maruyama", image: "/headshots/grace.jpg" },
     ],
   },
 ];
