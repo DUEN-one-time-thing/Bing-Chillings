@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rebekah in DUEN",
-  description: "A small starter website for Rebekah.",
+  title: "FlashBack | DUEN Bing Chilling",
+  description:
+    "A showcase website for FlashBack, a compact 270-degree photo capture machine by DUEN Spring 2026 Cohort Bing Chilling.",
 };
 
 export default function RootLayout({

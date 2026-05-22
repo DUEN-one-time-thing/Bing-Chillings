@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Warm abstract DUEN background">
-  <rect width="1600" height="1000" fill="#194d4a"/>
-  <path d="M0 760C220 690 330 520 520 560c180 38 240 210 440 190 230-23 320-270 640-245v495H0Z" fill="#0f766e"/>
-  <path d="M0 0h1600v470c-190-48-335-12-470 68-156 93-286 106-455 8-210-122-403-118-675 8Z" fill="#264653"/>
-  <path d="M120 770c212-52 327-143 466-142 190 2 278 170 468 146 160-20 252-150 426-145" fill="none" stroke="#f4a261" stroke-width="22" stroke-linecap="round" opacity=".9"/>
-  <circle cx="1280" cy="255" r="115" fill="#e9c46a" opacity=".95"/>
-  <path d="M95 170c170 62 285 57 443-17 125-59 266-61 419-8" fill="none" stroke="#ffffff" stroke-width="12" opacity=".22"/>
-  <path d="M1032 826c104-78 226-103 386-79" fill="none" stroke="#ffffff" stroke-width="12" opacity=".24"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="FlashBack photo placeholder background">
+  <rect width="1600" height="1000" fill="#1b091e"/>
+  <path d="M0 760C220 690 330 520 520 560c180 38 240 210 440 190 230-23 320-270 640-245v495H0Z" fill="#0d0d0d"/>
+  <path d="M0 0h1600v470c-190-48-335-12-470 68-156 93-286 106-455 8-210-122-403-118-675 8Z" fill="#1b091e"/>
+  <path d="M120 770c212-52 327-143 466-142 190 2 278 170 468 146 160-20 252-150 426-145" fill="none" stroke="#876828" stroke-width="22" stroke-linecap="round" opacity=".9"/>
+  <circle cx="1280" cy="255" r="115" fill="#c6a972" opacity=".92"/>
+  <path d="M95 170c170 62 285 57 443-17 125-59 266-61 419-8" fill="none" stroke="#fff3d7" stroke-width="12" opacity=".2"/>
+  <path d="M1032 826c104-78 226-103 386-79" fill="none" stroke="#fff3d7" stroke-width="12" opacity=".22"/>
 </svg>

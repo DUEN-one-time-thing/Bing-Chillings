@@ -1,115 +1,77 @@
-const highlights = [
-  "A tiny Next.js starter",
-  "Easy sections to edit",
-  "Ready for photos, links, and updates",
-];
-
-const startSteps = [
-  {
-    title: "Open this folder",
-    detail:
-      "Use Terminal and move into the project folder. In most editors, you can also right-click the folder and choose an option like Open in Terminal.",
-    command: "cd path/to/rebekah-duen-starter",
-  },
-  {
-    title: "Install the tools",
-    detail:
-      "This downloads the website packages listed in package.json. You only need to do this the first time, or after packages change.",
-    command: "npm install",
-  },
-  {
-    title: "Start the website",
-    detail:
-      "This runs the local development server. Leave this terminal window open while you work.",
-    command: "npm run dev",
-  },
-  {
-    title: "Open it in a browser",
-    detail:
-      "Visit the local address below. When you edit and save files, the page will usually update by itself.",
-    command: "http://localhost:3000",
-  },
-];
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      <section className="hero">
-        <nav className="nav" aria-label="Main navigation">
-          <a href="#start">Start</a>
-          <a href="#about">About</a>
-          <a href="#notes">Notes</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <nav className="siteNav" aria-label="Main navigation">
+        <a className="brand" href="#home" aria-label="FlashBack home">
+          FlashBack
+        </a>
+        <div className="navLinks">
+          <a href="#home">Home</a>
+          <Link href="/project">Project</Link>
+          <Link href="/details#timeline">Timeline</Link>
+          <Link href="/project#manual">Manual</Link>
+        </div>
+      </nav>
 
-        <div className="heroContent">
-          <p className="eyebrow">DUEN</p>
-          <h1>Rebekah&apos;s little corner of the web</h1>
-          <p className="intro">
-            A friendly starter site for sharing projects, photos, favorite
-            places, and whatever comes next.
+      <section id="home" className="hero">
+        <div className="photoPlaceholder" aria-label="Project photo placeholder">
+          <span>Project photo placeholder</span>
+        </div>
+        <div className="heroOverlay">
+          <p className="eyebrow">DUEN Spring 2026 Cohort</p>
+          <h1>FlashBack</h1>
+          <p>
+            A compact 270-degree photo machine for club tabling, campus events,
+            and physical keepsakes. This page separates the build logic,
+            operating flow, safety notes, and materials into quick-reference
+            sections.
           </p>
-          <a className="button" href="#start">
-            Start here
+          <Link className="cta" href="/team">
+            Meet the Team
+          </Link>
+        </div>
+      </section>
+
+      <section id="about" className="section aboutSection reveal">
+        <div className="sectionHeader">
+          <p className="eyebrow">About Us</p>
+          <h2>Bing Chilling builds for face-to-face connection.</h2>
+        </div>
+        <div className="aboutCopy">
+          <p>
+            FlashBack was created by the Spring 2026 DUEN cohort nicknamed
+            Bing Chilling, a team exploring how engineering can make campus
+            interactions feel more present, playful, and memorable.
+          </p>
+          <p>
+            The inspiration is simple: cultivate real social interaction in a
+            world where community can drift into social media isolation.
+            FlashBack reimagines the modern polaroid-like photo machine as a
+            compact event companion that prints physical, tangible keepsakes
+            people can hold, trade, and remember.
+          </p>
+          <a href="https://duendavis.com/" target="_blank" rel="noreferrer">
+            Visit DUEN Davis
           </a>
         </div>
       </section>
 
-      <section id="start" className="section startSection">
+      <section className="section videoSection reveal" aria-labelledby="video-title">
         <div className="sectionHeader">
-          <p className="eyebrow">Beginner tutorial</p>
-          <h2>How to start the app</h2>
-          <p>
-            Follow these steps in order. The commands go into Terminal, one at a
-            time.
-          </p>
+          <p className="eyebrow">Documentation</p>
+          <h2 id="video-title">Bing Chilling Cohort Documentation Video</h2>
         </div>
-
-        <div className="steps">
-          {startSteps.map((step, index) => (
-            <article className="step" key={step.title}>
-              <span className="stepNumber">{index + 1}</span>
-              <div>
-                <h3>{step.title}</h3>
-                <p>{step.detail}</p>
-                <code>{step.command}</code>
-              </div>
-            </article>
-          ))}
+        <div className="videoPlayer" aria-label="YouTube video embed placeholder">
+          <div className="playButton" aria-hidden="true" />
+          <p>YouTube embed placeholder</p>
         </div>
       </section>
 
-      <section id="about" className="section">
-        <div>
-          <p className="eyebrow">About</p>
-          <h2>Made to be simple to change</h2>
-        </div>
-        <p>
-          This page is intentionally small. Rebekah can swap this text for a
-          short bio, add a photo, link to favorite work, or turn it into a
-          personal homepage.
-        </p>
-      </section>
-
-      <section id="notes" className="section featureGrid">
-        {highlights.map((item) => (
-          <article className="feature" key={item}>
-            <h3>{item}</h3>
-            <p>
-              Edit the text in <code>app/page.tsx</code> and the colors in{" "}
-              <code>app/globals.css</code>.
-            </p>
-          </article>
-        ))}
-      </section>
-
-      <section id="contact" className="section contact">
-        <div>
-          <p className="eyebrow">Contact</p>
-          <h2>Say hello</h2>
-        </div>
-        <a href="mailto:rebekah@example.com">rebekah@example.com</a>
-      </section>
+      <footer className="globalFooter">
+        <p>FlashBack by DUEN Spring 2026 Cohort Bing Chilling</p>
+      </footer>
     </main>
   );
 }
