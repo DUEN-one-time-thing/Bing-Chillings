@@ -13,7 +13,6 @@ export default function Team() {
           <Link href="/#home">Home</Link>
           <Link href="/project">Project</Link>
           <Link href="/details#timeline">Timeline</Link>
-          <Link href="/project#manual">Manual</Link>
         </div>
       </nav>
 
