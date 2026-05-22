@@ -7,4 +7,4 @@ const eslintConfig = [
   ...nextVitals,
 ];
 
-export default eslintConfig
+export default eslintConfig;
