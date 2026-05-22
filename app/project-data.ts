@@ -6,12 +6,12 @@ export const milestones = [
   },
   {
     title: "Week 3",
-    body: "The team worked on CAD design for camera placement and coded features including still photo capture, live video feed, and motor rotation, though printer problems caused some delays. The design evolved from a boxy shape to a more R2D2-inspired form, and a screen was received and connected to the Raspberry Pi with controls uploaded. Progress on the camera display was halted after the ribbon cable broke, requiring a replacement to be ordered.",
+    body: "The team worked on CAD design for camera placement and coded features including still photo capture, live video feed, and motor rotation, though printer problems caused some delays. The design evolved from a boxy shape to a more R2D2-inspired form, and a screen was received and connected to the Raspberry Pi with controls uploaded. Progress on the camera display was halted after the ribbon cable turned out to be the wrong size, requiring a correct replacement to be ordered.",
     images: ["/timeline/wk3_1.png", "/timeline/wk3_2.png", "/timeline/wk3_3.png"],
   },
   {
     title: "Week 4",
-    body: "A tolerance print was done to test wall connections, and the CAD was migrated to SolidWorks so the whole team could collaborate, though the transfer caused sketches to convert into objects. Hardware progress included completing the height mechanism, connecting the ring light to the Raspberry Pi, and advancing motor, lighting, and early UI code. The UI was redesigned from touchscreen to physical buttons per the project manager's direction, and the thermal printer case was updated with screw holders with the logo added to the rear chassis. The team also worked on the technical presentation, wrapped up the fundraiser, built a roughly 75%-scale cardboard model, and addressed printing challenges using the ESDC printers for fit testing.",
+    body: "A tolerance print was done to test wall connections, and the CAD was migrated to SolidWorks so the whole team could collaborate, though the transfer caused sketches to convert into objects. Hardware progress included completing the height mechanism, connecting the ring light to the Raspberry Pi, and advancing motor, lighting, and early UI code. The UI was redesigned from touchscreen to physical buttons per the project manager's direction, and the thermal printer case was updated with screw holders with the logo added to the rear chassis. The team also worked on the technical presentation, wrapped up the fundraiser, built a roughly 75%-scale cardboard model, and addressed printing challenges using an in-house printer to check for sizing.",
     images: ["/timeline/wk4_1.png", "/timeline/wk4_2.png", "/timeline/wk4_3.png"],
   },
   {
@@ -29,7 +29,7 @@ export const milestones = [
 export const bom = [
   ["Raspberry Pi 4 (4GB RAM)", "1", "FREE", "FREE"],
   ["Twidec/Spade Crimp Connectors", "1", "$5.45", "$5.45"],
-  ["6 Way Fuse Block Box", "1", "$10.37", "$10.37"],
+  ["6 Way Fuse Box", "1", "$10.37", "$10.37"],
   ["5 In. Touchscreen IPS", "1", "$38.95", "$38.95"],
   ["Thermal Printer", "1", "$51.22", "$51.22"],
   ["Thermal Paper Rolls", "1", "$13.10", "$13.10"],

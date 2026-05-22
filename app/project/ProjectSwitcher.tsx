@@ -28,7 +28,7 @@ const quickFacts = [
 const functionalityRows = [
   {
     title: "Power System",
-    body: "A 12.6V rechargeable LiPo battery delivers power through a physical ON/OFF toggle switch into a 6-way fuse block, then distributes to four adjustable DC-to-DC buck converters calibrated to 5V, 8V, 5V, and 6V for the Raspberry Pi, thermal printer, ring light, and servo respectively.",
+    body: "A 12.6V rechargeable LiPo battery delivers power through a physical ON/OFF toggle switch into a 6-way fuse box, then distributes to three adjustable DC-to-DC buck converters calibrated to 5V for the Raspberry Pi, 8V for the thermal printer, and 6V for the servo. The ring light is powered directly by the Raspberry Pi.",
   },
   {
     title: "Central Processing",
@@ -59,7 +59,7 @@ const designSections = [
   },
   {
     title: "Voltage Regulation",
-    body: "Three adjustable DC-to-DC buck converters are calibrated to the precise voltage requirements of each component. All hardware peripherals connect to the Pi via ribbon cable for the camera module, with direct wiring for buttons, ring light, servo, and display.",
+    body: "Three adjustable DC-to-DC buck converters are calibrated to 5V for the Raspberry Pi, 8V for the thermal printer, and 6V for the servo. The ring light draws power directly from the Pi. All hardware peripherals connect via ribbon cable for the camera module, with direct wiring for buttons, ring light, servo, and display.",
   },
 ];
 
@@ -85,7 +85,7 @@ const challenges = [
   },
   {
     title: "Hardware Lag",
-    body: "Final hardware was not printed until the last week, requiring cardboard prototypes for panoramic function testing throughout development. This introduced instability during rotation testing and made wiring management difficult for the majority of the build cycle.",
+    body: "Final hardware was not printed until the last week, requiring cardboard prototypes for panoramic function testing throughout development.",
   },
   {
     title: "Base & Motor Orientation",
