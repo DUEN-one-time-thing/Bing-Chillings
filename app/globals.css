@@ -1,7 +1,7 @@
 :root {
-  --background: #0d0d0d;
-  --surface: #151515;
-  --surface-soft: #1b1b1b;
+  --background: #161616;
+  --surface: #1e1e1e;
+  --surface-soft: #242424;
   --text: #fff3d7;
   --text-muted: rgba(255, 243, 215, 0.68);
   --text-soft: rgba(255, 243, 215, 0.48);
@@ -57,15 +57,33 @@ p {
   height: 68px;
   padding: 0 clamp(20px, 5vw, 64px);
   border-bottom: 1px solid var(--line);
-  background: rgba(13, 13, 13, 0.88);
+  background: rgba(22, 22, 22, 0.88);
   backdrop-filter: blur(20px);
 }
 
 .brand {
+  display: flex;
+  align-items: center;
   color: var(--accent);
   font-size: 1.05rem;
   font-weight: 600;
   text-decoration: none;
+}
+
+.brandLogo {
+  height: 44px;
+  width: auto;
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
+.heroLogo {
+  width: min(680px, 100%);
+  height: auto;
+  display: block;
+  filter: invert(1);
+  mix-blend-mode: screen;
+  margin: 0 auto;
 }
 
 .navLinks {
@@ -97,6 +115,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: clamp(42px, 7vw, 76px);
   margin: 0 auto;
   padding: 126px 0 88px;
@@ -104,29 +123,28 @@ p {
 
 .photoPlaceholder {
   order: 2;
-  min-height: clamp(280px, 42vw, 520px);
+  width: 80%;
+  aspect-ratio: 16 / 9;
   display: grid;
   place-items: center;
-  overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 20px;
   background:
-    linear-gradient(180deg, rgba(255, 243, 215, 0.05), transparent),
+    linear-gradient(180deg, rgba(255, 243, 215, 0.04), transparent),
     var(--surface);
+  padding: clamp(24px, 4vw, 48px);
 }
 
 .photoPlaceholder::before {
-  width: min(520px, 70%);
-  aspect-ratio: 1.58;
+  width: 100%;
+  height: 100%;
   content: "";
-  border: 1px solid rgba(198, 169, 114, 0.36);
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at 50% 42%, rgba(198, 169, 114, 0.2), transparent 34%),
-    linear-gradient(145deg, #222, #101010);
+  border: 1px dashed rgba(198, 169, 114, 0.25);
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(198, 169, 114, 0.04), transparent);
   box-shadow:
-    inset 0 1px 0 rgba(255, 243, 215, 0.12),
-    0 34px 80px rgba(0, 0, 0, 0.28);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 24px 60px rgba(0, 0, 0, 0.45);
 }
 
 .photoPlaceholder span {
@@ -141,6 +159,14 @@ p {
 .heroOverlay {
   order: 1;
   max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heroOverlay .eyebrow {
+  font-size: 1.4rem;
 }
 
 .eyebrow {
@@ -195,35 +221,41 @@ h4 {
   line-height: 1.55;
 }
 
+.ctaRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
 .cta {
   display: inline-flex;
-  min-height: 46px;
+  min-height: 62px;
   align-items: center;
   justify-content: center;
-  padding: 0 22px;
-  border: 1px solid transparent;
+  padding: 0 42px;
+  border: 1.5px solid var(--accent);
   border-radius: 999px;
-  background: var(--text);
-  color: var(--background);
-  font-size: 0.95rem;
+  background: transparent;
+  color: var(--accent);
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   transition:
-    background 160ms ease,
-    color 160ms ease,
+    background 200ms ease,
+    color 200ms ease,
     transform 160ms ease;
 }
 
 .cta:hover {
   background: var(--accent);
   color: var(--background);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .section {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
-  padding: clamp(82px, 11vw, 150px) 0;
+  padding: clamp(56px, 8vw, 110px) 0;
   scroll-margin-top: 92px;
 }
 
@@ -287,6 +319,7 @@ h4 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
   margin-top: 28px;
+  flex-wrap: wrap;
 }
 
 .quickFacts div {
@@ -591,6 +624,147 @@ h4 {
 .smallTextLink:hover {
   border-color: rgba(255, 243, 215, 0.34);
   color: var(--text);
+}
+
+@keyframes colorPulse {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.infoSlider {
+  position: relative;
+  min-height: 75svh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #252525 0%,
+    #2e1f0a 40%,
+    rgba(198, 169, 114, 0.18) 50%,
+    #2e1f0a 60%,
+    #252525 100%
+  );
+  background-size: 300% 300%;
+  animation: colorPulse 8s ease-in-out infinite;
+}
+
+.infoSlider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(to top, transparent, var(--background));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.infoSlider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(to bottom, transparent, var(--background));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.infoSliderFade {
+  display: none;
+}
+
+.infoSliderInner {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: clamp(52px, 7vw, 90px) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flashcard {
+  background: var(--surface);
+  border: 1px solid rgba(198, 169, 114, 0.2);
+  border-radius: 18px;
+  padding: clamp(44px, 5vw, 72px) clamp(40px, 5vw, 68px);
+  width: 70%;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.26s ease, transform 0.26s ease;
+}
+
+.flashcard--out.flashcard--right {
+  opacity: 0;
+  transform: translateX(-52px);
+}
+
+.flashcard--out.flashcard--left {
+  opacity: 0;
+  transform: translateX(52px);
+}
+
+@keyframes flashcardInRight {
+  from { opacity: 0; transform: translateX(52px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes flashcardInLeft {
+  from { opacity: 0; transform: translateX(-52px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.flashcard--in.flashcard--right {
+  animation: flashcardInRight 0.32s ease forwards;
+}
+
+.flashcard--in.flashcard--left {
+  animation: flashcardInLeft 0.32s ease forwards;
+}
+
+.flashcardLabel {
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.flashcardBody {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: clamp(0.92rem, 1.5vw, 1.08rem);
+  line-height: 1.78;
+}
+
+.flashcardNav {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.flashcardNavBtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 220ms ease, background 220ms ease;
+}
+
+.flashcardNavBtn:hover {
+  border-color: var(--accent);
+}
+
+.flashcardNavBtn.active {
+  border-color: var(--accent);
+  background: var(--accent);
 }
 
 .aboutSection {
