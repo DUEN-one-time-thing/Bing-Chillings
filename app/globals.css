@@ -1,7 +1,7 @@
 :root {
-  --background: #161616;
-  --surface: #1e1e1e;
-  --surface-soft: #242424;
+  --background: #201224;
+  --surface: #2a1630;
+  --surface-soft: #331c3b;
   --text: #fff3d7;
   --text-muted: rgba(255, 243, 215, 0.68);
   --text-soft: rgba(255, 243, 215, 0.48);
@@ -57,7 +57,7 @@ p {
   height: 68px;
   padding: 0 clamp(20px, 5vw, 64px);
   border-bottom: 1px solid var(--line);
-  background: rgba(22, 22, 22, 0.88);
+  background: rgba(25, 10, 29, 0.88);
   backdrop-filter: blur(20px);
 }
 
@@ -266,7 +266,7 @@ h4 {
 }
 
 .aboutUsSection {
-  background: linear-gradient(180deg, #0d0d0d 0%, #1b091e 100%);
+  background: linear-gradient(180deg, #201224 0%, #5b21b6 100%);
 }
 
 .aboutUsContent {
@@ -707,11 +707,11 @@ h4 {
   align-items: center;
   background: linear-gradient(
     135deg,
-    #252525 0%,
-    #2e1f0a 40%,
-    rgba(198, 169, 114, 0.18) 50%,
-    #2e1f0a 60%,
-    #252525 100%
+    #201224 0%,
+    #5b21b6 40%,
+    rgba(167, 100, 255, 0.28) 50%,
+    #5b21b6 60%,
+    #201224 100%
   );
   background-size: 300% 300%;
   animation: colorPulse 8s ease-in-out infinite;
@@ -955,13 +955,13 @@ h4 {
   scroll-margin-top: 92px;
   background: linear-gradient(
     180deg,
-    #1b091e 0%,
-    #4a3d5c 12%,
+    #201224 0%,
+    #5b21b6 12%,
     #fffcf7 25%,
     #fff9f0 50%,
     #fffcf7 75%,
-    #4a3d5c 88%,
-    #1b091e 100%
+    #5b21b6 88%,
+    #201224 100%
   );
   color: var(--background);
   position: relative;
