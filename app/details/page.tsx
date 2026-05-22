@@ -13,7 +13,6 @@ export default function Details() {
           <Link href="/#home">Home</Link>
           <Link href="/project">Project</Link>
           <a href="#timeline">Timeline</a>
-          <Link href="/project#manual">Manual</Link>
         </div>
       </nav>
 

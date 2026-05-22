@@ -11,7 +11,6 @@ export default function Home() {
           <a href="#home">Home</a>
           <Link href="/project">Project</Link>
           <Link href="/details#timeline">Timeline</Link>
-          <Link href="/project#manual">Manual</Link>
         </div>
       </nav>
 
