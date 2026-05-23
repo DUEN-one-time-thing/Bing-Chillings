@@ -286,16 +286,14 @@ export function ProjectSwitcher() {
                 <tr>
                   <th>Component</th>
                   <th>Qty</th>
-                  <th>Unit Cost</th>
                   <th>Total</th>
                 </tr>
               </thead>
               <tbody>
-                {bom.map(([component, qty, cost, total]) => (
+                {bom.map(([component, qty, , total]) => (
                   <tr key={component}>
                     <td>{component}</td>
                     <td>{qty}</td>
-                    <td>{cost}</td>
                     <td>{total}</td>
                   </tr>
                 ))}
