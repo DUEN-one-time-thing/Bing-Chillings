@@ -36,17 +36,14 @@ export default function Home() {
       <section id="about" className="section aboutSection reveal">
         <div className="sectionHeader">
           <p className="eyebrow">About Us</p>
-          <h2>We are the Spring 2026 DUEN Cohort, Bing Chilling.</h2>
+          <h2>Bing Chilling</h2>
         </div>
         <div className="aboutCopy">
           <p>
-            Nowadays, digitized media leads to less tangible memories because important
-            experiences are often stored on mobile devices and easily get lost.
+            FlashBack was created by the Spring 2026 DUEN cohort called Bing Chilling. A team of 21 UC Davis students exploring how engineering can make campus interactions feel more present, playful, and memorable.
           </p>
           <p>
-            FlashBack was built to change that, an exciting photo booth that draws
-            greater attention to holding onto special memories through physical keepsakes
-            at DUEN tabling and formal events.
+            DUEN (Davis Undergraduate Engineering Network) is a student engineering organization at UC Davis that brings together students from diverse disciplines to collaborate on hands-on projects and real-world challenges. Through FlashBack, our team combined creativity, design, and engineering.
           </p>
           <a href="https://duendavis.com/" target="_blank" rel="noreferrer">
             Visit DUEN Davis
