@@ -122,39 +122,13 @@ p {
   text-align: center;
 }
 
-.photoPlaceholder {
+.heroPhoto {
   order: 2;
-  width: 80%;
-  aspect-ratio: 16 / 9;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
+  width: 55%;
+  max-width: 480px;
+  height: auto;
   border-radius: 20px;
-  background:
-    linear-gradient(180deg, rgba(255, 243, 215, 0.04), transparent),
-    var(--surface);
-  padding: clamp(24px, 4vw, 48px);
-}
-
-.photoPlaceholder::before {
-  width: 100%;
-  height: 100%;
-  content: "";
-  border: 1px dashed rgba(198, 169, 114, 0.25);
-  border-radius: 12px;
-  background: linear-gradient(145deg, rgba(198, 169, 114, 0.04), transparent);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
-    0 24px 60px rgba(0, 0, 0, 0.45);
-}
-
-.photoPlaceholder span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+  object-fit: cover;
 }
 
 .heroOverlay {

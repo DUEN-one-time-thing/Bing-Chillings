@@ -16,9 +16,7 @@ export default function Home() {
       </nav>
 
       <section id="home" className="hero">
-        <div className="photoPlaceholder" aria-label="Project photo placeholder">
-          <span>Project photo placeholder</span>
-        </div>
+        <img src="/hero_photo.png" alt="FlashBack machine" className="heroPhoto" />
         <div className="heroOverlay">
           <p className="eyebrow">DUEN Spring 2026 Cohort</p>
           <h1>
@@ -46,7 +44,7 @@ export default function Home() {
             DUEN (Davis Undergraduate Engineering Network) is a student engineering organization at UC Davis that brings together students from diverse disciplines to collaborate on hands-on projects and real-world challenges. Through FlashBack, our team combined creativity, design, and engineering.
           </p>
           <a href="https://duendavis.com/" target="_blank" rel="noreferrer">
-            Visit DUEN Davis
+            Visit DUEN Website
           </a>
           <div className="ctaRow">
             <Link className="cta" href="/team">
