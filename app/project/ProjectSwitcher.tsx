@@ -131,22 +131,6 @@ export function ProjectSwitcher() {
 
       <div className="projectContent">
 
-        {/* Demo Video */}
-        <section className="projectBlock">
-          <div className="sectionHeader compactHeader">
-            <p className="eyebrow">Project Demo</p>
-            <h2>FlashBack in action.</h2>
-          </div>
-          <div className="videoPlayer">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="FlashBack Project Demo"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </section>
-
         {/* 01 Overview */}
         <section id="overview" className="projectBlock splitBlock">
           <div>
