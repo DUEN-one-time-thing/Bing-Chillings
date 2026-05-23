@@ -81,7 +81,6 @@ p {
   width: min(680px, 100%);
   height: auto;
   display: block;
-  filter: invert(1);
   mix-blend-mode: screen;
   margin: 0 auto;
 }
@@ -1428,10 +1427,8 @@ td {
 
 td:nth-child(2),
 td:nth-child(3),
-td:nth-child(4),
 th:nth-child(2),
-th:nth-child(3),
-th:nth-child(4) {
+th:nth-child(3) {
   text-align: right;
 }
 
